@@ -1,0 +1,124 @@
+﻿File Management (การจัดการไฟล์) 
+
+
+หมายถึง กระบวนการที่ใช้ในการจัดระเบียบและเก็บรักษาข้อมูลให้อยู่ในรูปแบบที่สามารถเรียกใช้งานได้สะดวกรวดเร็ว ซึ่งมีความเกี่ยวข้องกับการสร้างโครงสร้างที่เหมาะสมสำหรับการจัดเก็บไฟล์และใช้อุปกรณ์เก็บข้อมูลคอมพิวเตอร์
+
+
+โดยวัตถุประสงค์หลักของการจัดการไฟล์ หรือ File Managment คือ การจัดระเบียบของไฟล์ข้อมูลนำเทคโนโลยีเข้ามาช่วยเสริมสร้างการจัดการ และปฏิบัติตามหลักการจัดการไฟล์ที่ดี ช่วยให้ผู้ใช้สามารถค้นหาและเรียกใช้ไฟล์ที่ต้องการได้ง่าย แถมระบบที่ดียังช่วยรักษาความปลอดภัยของข้อมูลได้ เช่น บางองค์กรใช้บริการเก็บข้อมูลในคลาวด์ (Cloud)  เพื่อช่วยประหยัดเวลาในการค้นหาทรัพยากรเมื่อเราต้องการใช้งาน
+
+
+Types of files
+1. ไฟล์เอกสาร (Document Files)
+2. ไฟล์รูปภาพ (Image Files)
+3. ไฟล์วิดีโอและเสียง (Video & Audio Files)
+4. ไฟล์บีบอัด (Compressed Files)
+5. ไฟล์ระบบและโปรแกรม (System & Executable Files)
+
+
+Text(ascll)
+ลักษณะ: เก็บข้อมูลเป็นรหัสตัวอักษรตามมาตรฐาน ASCII (American Standard Code for Information Interchange) โดยตัวอักษร 1 ตัว จะใช้พื้นที่ประมาณ 1 Byte (8 bits)
+Binary flies
+ลักษณะ: เก็บข้อมูลเป็นลำดับของ 0 และ 1 (Bits) ที่ไม่มีรูปแบบตัวอักษรตายตัว ข้อมูลอาจเป็นค่าสีของพิกเซล, คลื่นเสียง, หรือคำสั่งโปรแกรม
+csvFiles(Comma-Separated Values)
+ลักษณะ: เป็นไฟล์ Text ธรรมดาที่ใช้เครื่องหมาย "จุลภาค" (Comma: ,) เป็นตัวแบ่งคอลัมน์ และใช้การขึ้นบรรทัดใหม่แบ่งแถว
+จุดประสงค์: ใช้เพื่อแลกเปลี่ยนข้อมูลระหว่างโปรแกรมที่ต่างกัน (เช่น ดึงข้อมูลจากฐานข้อมูล SQL ไปเปิดใน Excel)
+
+
+Basics of file Operations
+1.Creating a new file                             
+2.Opening an existing file                     
+3.Reading from that file                     
+4.Writing to that file
+5.Closing the file
+
+
+The Architecture of a file System
+โครงสร้างและกลไกการทำงานของระบบปฏิบัติการที่ใช้จัดระเบียบ จัดเก็บ เข้าถึง และจัดการไฟล์บนหน่วยความจำสำรอง
+
+
+
+
+File Systems in Operating System
+* Fat(file Allocation Teble
+* NTFS(New technology file system
+* ext(Extended File System)
+* HFS (Hierarchical File System)
+* APFS (Apple File System)
+
+
+Disk Free Space Management in OS
+1.Bit Vecter     
+2.Linked List
+3.Counting 
+4.Grouping
+
+
+
+
+File Handling in Java
+1.Opening Files
+2.Reading from Files
+3.Writing to Files
+4.Adding to Files
+5.Closing the Files
+
+
+
+
+File Directories : Structure of directory
+ประเภทของโครงสร้าง Directory
+- Single-Level Directory
+- Two-Level Directory
+- Tree-Structure Directory
+- Graph Directory Structure
+
+
+OS มี Memory กี่แบบ 
+มี 2 แบบ Primary = เร็ว (ใช้ตอนทำงาน), Secondary = เก็บ (ระยะยาว)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+File Handling for C++
+
+
+iostream,fstream
+fstream control ofstream,ifstream
+
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+
+int main() {
+  // Create and open a text file
+  ofstream MyFile("filename.txt");
+
+
+  // Write to the file
+  MyFile << "Files can be tricky, but it is fun enough!";
+
+
+  // Close the file
+  MyFile.close();
+}
+
+
+
+
+
+
+
+
+Github Link https://github.com/tonnamzaza/File-Management-17-03-2026/tree/main/File-Management
